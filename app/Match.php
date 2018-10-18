@@ -7,4 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Match extends Model
 {
     protected $fillable = ['name', 'next', 'winner', 'board'];
+
+    protected $casts = [
+        'board' => 'array',
+    ];
 }
